@@ -38,6 +38,27 @@ const Register = () => {
                 <h2>Register</h2>
 
                 <Form onSubmit={handleClick}>
+                <div className='row'>
+                  <div className='col'>
+                   <FormGroup>
+                     <input 
+                     type='text' 
+                     placeholder='First Name' 
+                     required id='fname'
+                     onChange={handleChange} />
+                   </FormGroup>
+                  </div>
+                  <div className='col'>
+                   <FormGroup>
+                     <input 
+                     type='text' 
+                     placeholder='Last Name' 
+                     required id='lname'
+                     onChange={handleChange} />
+                   </FormGroup>  
+                  </div>
+                </div>
+                
                 <FormGroup>
                     <input 
                     type='text' 
@@ -57,6 +78,20 @@ const Register = () => {
                     type='password' 
                     placeholder='Password' 
                     required id='password'
+                    onChange={handleChange} />
+                  </FormGroup>
+                  <FormGroup>
+                    <input 
+                    type='text' 
+                    placeholder='NIC' 
+                    required id='nic'
+                    onChange={handleChange} />
+                  </FormGroup>
+                  <FormGroup>
+                    <input 
+                    type='tel' 
+                    placeholder='Telephone' 
+                    required id='telephone'
                     onChange={handleChange} />
                   </FormGroup>
                   <Button className='btn secondary__btn auth__btn'
